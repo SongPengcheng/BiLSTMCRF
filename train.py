@@ -3,7 +3,7 @@ import torch
 import torch.autograd as autograd
 import torch.nn as nn
 import torch.optim as optim
-import pickle
+import cPickle as pickle
 import BiLSTMCRF
 torch.manual_seed(1)
 START_TAG = "<START>"
