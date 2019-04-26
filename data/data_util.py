@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import cPickle as pickle
 sourcefile = open("origin.txt","r",encoding="UTF-8")
 word_to_ix = {}

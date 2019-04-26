@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import re
 sourcefile = open("train2019.txt","r",encoding="UTF-8")
 targetfile = open("origin.txt","w",encoding='UTF-8')
