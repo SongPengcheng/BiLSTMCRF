@@ -8,6 +8,6 @@ for item in lines:
         endpos = re.search("q[0-9]*:", originstr).end()
         tempstr = " ".join(originstr[endpos:])
         targetstr = tempstr.rstrip().rstrip('？')
-        targetfile.write(targetstr+"\n\n")
+        targetfile.write(targetstr+"\n")
 
 
