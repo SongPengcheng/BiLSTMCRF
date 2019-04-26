@@ -40,6 +40,6 @@ for epoch in range(300):  # epoch是指数据集被训练的次数，与数据�
         loss.backward()
         optimizer.step()
 # Check predictions after training
-path_name = "./model/model.pkl"
+path_name = "model/model.pkl"
 torch.save(model,path_name)
 
