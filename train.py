@@ -43,7 +43,7 @@ for epoch in range(300):  # epoch是指数据集被训练的次数，与数据�
 # Check predictions after training
 with torch.no_grad():
     print(word_to_ix)
-    test_str = "爱 像 龙 卷 风".split()
+    test_str = "谁 的 代 表 作 是 龙 卷 风".split()
     print(test_str)
     precheck_sent = BiLSTMCRF.prepare_sequence(test_str, word_to_ix)
     print(model(precheck_sent))
