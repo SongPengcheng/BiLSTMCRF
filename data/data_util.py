@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import cPickle as pickle
-sourcefile = open("origin.txt","r",encoding="UTF-8")
+sourcefile = open("origin.txt","r")
 word_to_ix = {}
 training_data = list()
 lines = sourcefile.readlines()
