@@ -39,11 +39,7 @@ for epoch in range(300):  # epoch是指数据集被训练的次数，与数据�
         # calling optimizer.step()
         loss.backward()
         optimizer.step()
-
 # Check predictions after training
-with torch.no_grad():
-    print(word_to_ix)
-    test_str = "谁 的 代 表 作 是 龙 卷 风".split()
-    print(test_str)
-    precheck_sent = BiLSTMCRF.prepare_sequence(test_str, word_to_ix)
-    print(model(precheck_sent))
+path_name = "./model/model.pkl"
+torch.save(model,path_name)
+
