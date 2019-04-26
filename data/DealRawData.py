@@ -6,8 +6,8 @@ for item in lines:
     if not re.search("q[0-9]*:",item) is None:
         originstr = item
         endpos = re.search("q[0-9]*:", originstr).end()
-        targetstr = " ".join(originstr[endpos:].rstrip("？?")).rstrip(" ")
-        targetfile.write(targetstr+"\n")
-
+        tempstr = " ".join(originstr[endpos:])
+        targetstr = tempstr.rstrip().rstrip('？')
+        targetfile.write(targetstr+"\n\n")
 
 
